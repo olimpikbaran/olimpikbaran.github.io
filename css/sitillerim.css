@@ -1,0 +1,199 @@
+.mySearchIcon   /* icon boyutu kucuk geldiginden kendim ayarladim. */
+{
+    font-size: 20px;
+}
+
+body
+{
+    background-color: #191919;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+}
+
+.navbar .navbar-brand 
+{
+  color: #FFF056;
+}
+
+.carousel
+{
+  margin-top: 8px;
+}
+
+.resimAltyazilari
+{
+    color: #DFE2DB;
+    font-size: 15pt;
+}
+
+.haberler1
+{
+  color: #DFE2DB;
+  text-align: center;
+  margin-left: 30px;
+  padding-bottom: 9px;
+}
+
+.list-group-item
+{
+  background-color: #DFE2DB;
+}
+
+.habericerigi
+{
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.duyuruIcerigi .list-group-item
+{
+  border-color: #191919;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.habericerigi .list-group-item
+{
+  border-color: #191919;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.anasayfaYazi
+{
+  color: #DFE2DB;
+  padding-top: 30px;
+  font-size: 14pt;
+}
+
+.anasayfaKucukBaslik
+{
+  color: salmon;
+  padding-left: 30px;
+}
+
+.duyurular1
+{
+  color: #DFE2DB;
+  text-align: center;
+  margin-right: 30px;
+  padding-bottom: 9px;
+}
+
+.duyuruIcerigi
+{
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.carousel-fade .carousel-inner .item {   /* slide effektini sevmedigim icin yeni efekt ekliyorum */
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+  }
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  }
+
+  footer
+  {
+    padding-right: 20px;
+    float: right;
+    bottom: 0px; 
+  }
+
+
+  /* ************************************************************************ */
+  
+  .solaYatik
+  {
+    float: left;
+    margin: 20px;
+    margin-left: 60px;
+  }
+
+  .resimYazi
+  {
+    color: #DFE2DB;
+    padding-right: 20px;
+    padding-left: 30px;
+    font-size: 13pt;
+  }
+
+  .col-lg-9 .linkler
+  {
+    text-decoration: none;
+    color: cyan;
+  }
+
+  .col-lg-9 .linkler:hover
+  {
+    text-decoration: none;
+    color: greenyellow;
+  }
+
+  .baslik
+  {
+    text-align: center;
+    color: #DFE2DB;
+  }
+
+  .resimBilgi
+  {
+    color: #DFE2DB;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 45%;
+  }
+
+  .iletisimYazi
+  {
+    color: #DFE2DB;
+    font-size: 15pt;
+    margin-left: 50px;
+    padding-top: 80px;
+  }
+
+  .iletisim
+  {
+    float: left;
+  }
+
+  .amsterdamYazi
+  {
+    color: #DFE2DB;
+    padding-right: 20px;
+    padding-left: 30px;
+    font-size: 13pt;
+  }
+
+  .girisInput
+  {
+    margin-top: 30px;
+    margin-left: 35%;
+    width: 25%;
+  }
+
+  .girisBtn
+  {
+    margin-top: 80px;
+    margin-left: 40%;
+    width: 15%;
+  }

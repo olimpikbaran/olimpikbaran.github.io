@@ -1,0 +1,189 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script></head>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Anasayfa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script/myScript.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/sitillerim.css" /> <!-- sona ekledim ki yapacagim degisiklikler gecerli olsun-->
+</head>
+<body>
+  <div class="row">
+    <div style="height:55px" class="col-lg-12">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="anasayfa.html"><b>Vikipedya</b></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="Rijksmuseum.html">Rijksmuseum</a></li>
+                      <li><a href="vanGoghMuseum.html">Van Gogh Müzesi</a></li>
+                      <li><a href="amsterdam.html">Amsterdam</a></li> 
+                      <li><a href="iletisim.html">İletişim</a></li> 
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="kayit.html"><span class="glyphicon glyphicon-user"></span id="hg"> Kayıt Ol</a></li>
+                      <li><a href="giris.html"><span class="glyphicon glyphicon-log-in"></span id="hg1"> Giriş</a></li>
+                    </ul>
+                  </div>
+                </div>
+      </nav>
+  </div>
+
+  </div>
+
+  <div class="row">        
+
+    <div class="col-lg-3 haberblok" ng-app="myApp" ng-controller="customersCtrl"> 
+      <h2 class="haberler1"><b>HABERLER</b></h2>
+      <li ng-repeat="x in myData" >
+        {{ x.name }}
+      </li>      
+      </div>
+      
+
+    <div id="myCarousel" class="carousel slide carousel-fade col-lg-6 col-offset2" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="Rijksmuseum.html">                <!-- resimlere link ekliyorum -->
+            <img class="center-block img-responsive" src="slideImages/rijksmuseumAmsterdam.jpg" alt="Hollanda Resmi"> <!-- center-block ile ortaliyorum-->
+          </a>
+          <div class="carousel-caption">
+            <p class="resimAltyazilari">-Rijksmuseum</p>
+          </div>
+        </div>
+    
+        <div class="item">
+            <a href="vanGoghMuseum.html">
+              <img class="center-block img-responsive" src="slideImages/vanGoghMuseum.jpg" alt="Hollanda Resmi">
+            </a>
+          <div class="carousel-caption">
+            <p class="resimAltyazilari">-Van Gogh Müzesi</p>
+          </div>
+        </div>
+    
+        <div class="item">
+            <a href="amsterdam.html">
+             <img class="center-block img-responsive" src="slideImages/amsterdam.jpg" alt="Hollanda Resmi">
+            </a>
+          <div class="carousel-caption">
+            <p class="resimAltyazilari">-Amsterdam</p>
+          </div>
+        </div>
+
+        <div class="item">
+            <a href="amsterdam.html">
+             <img class="center-block img-responsive" src="slideImages/amsterdam tulip festival nc.jpg" alt="Hollanda Resmi">
+            </a>
+          <div class="carousel-caption">
+            <p class="resimAltyazilari">-Amsterdam Tulip Festivali</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <h2 class="duyurular1"><b>DUYURULAR</b></h2>
+      <div class="list-group duyuruIcerigi">
+        <li class="list-group-item">Sitemiz güncellendi.</a>
+        <li class="list-group-item">2</a>
+        <li class="list-group-item">3</a>
+        <li class="list-group-item">4</a>
+        <li class="list-group-item">5</a>
+        <li class="list-group-item">6</a>
+        <li class="list-group-item">7</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="padding-top:30px;">
+
+    <h2 class="baslik">HOLLANDA'DA MUTLAKA YAPMANIZ GEREKENLER</h2>
+
+    <h3 class="anasayfaKucukBaslik">Heineken Deneyimi :</h3>
+
+    <img style="float: left;padding-left:50px;margin-right:50px;padding-top:30px;" src="images/anasayfa/508108017.jpeg">
+
+    <p class="anasayfaYazi">
+      Heineken dünyasına adım atabileceğiniz ve size kaliteli zaman geçirmenizi sağlayabilecek bir aktivite. 
+    </p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9746.776808682122!2d4.8918249!3d52.3578313!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4fd3caab9141ac0a!2sHeineken+Experience!5e0!3m2!1str!2str!4v1522145092776" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  </div>
+
+  <div style="padding-top:30px;">
+
+    <h3 class="anasayfaKucukBaslik">Eindhoven Damıtma Tesisi :</h3>
+
+    <img style="float: left;padding-left:50px;margin-right:50px;padding-top:80px;" src="images/anasayfa/bottle_distillery.jpg">
+
+    <p class="anasayfaYazi">
+      Eindhoven'daki damıtma tesisinde bir yolculuğa çıkarak eğlenceli vakit geçirebilirsiniz.
+    </p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9948.899599541173!2d5.4849852!3d51.4356635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3658305fa47cc573!2sBottle+Distillery!5e0!3m2!1str!2str!4v1522145663120" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  </div>
+
+  <div style="padding-top:30px;">
+
+    <h3 class="anasayfaKucukBaslik">Anne Frank'in Evi :</h3>
+
+    <img style="float: left;padding-left:50px;margin-right:50px;padding-top:40px;" src="images/anasayfa/annefrank.jpg">
+
+    <p class="anasayfaYazi">
+      Anne Frank'in müze haline getirilmiş evini gezerek aynı zamanda tarihin geçmiş sayfalarında gezinebilirsiniz.
+    </p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9742.941493231525!2d4.8839765!3d52.3752182!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd49a5d653e635b0a!2sAnne+Frank&#39;%C4%B1n+Evi!5e0!3m2!1str!2str!4v1522146551643" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  </div>
+
+</body>
+
+<footer>
+  <p style="margin-top:30px;" class="myFooter">Bütün haklar saklıdır. MEBA Corporation. </p>
+</footer>
+
+</html>

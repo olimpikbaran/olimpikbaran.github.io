@@ -1,0 +1,82 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Anasayfa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script/myScript.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/sitillerim.css" /> <!-- sona ekledim ki yapacagim degisiklikler gecerli olsun-->
+</head>
+
+<body>
+    <div class="row">
+        <div style="height:55px" class="col-lg-12">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="anasayfa.html"><b>Vikipedya</b></a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                          <li><a href="Rijksmuseum.html">Rijksmuseum</a></li>
+                          <li><a href="vanGoghMuseum.html">Van Gogh Müzesi</a></li>
+                          <li><a href="amsterdam.html">Amsterdam</a></li> 
+                          <li><a href="iletisim.html">İletişim</a></li> 
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="kayit.html"><span class="glyphicon glyphicon-user"></span> Kayıt Ol</a></li>
+                          <li class="active"><a href="giris.html"><span class="glyphicon glyphicon-log-in"></span> Giriş</a></li>
+                        </ul>
+                      </div>
+                    </div>
+          </nav>
+    </div>
+
+    <form>
+        <div style="margin-top:150px;" class="input-group girisInput">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input id="kullanici" type="text" class="form-control" name="kullanici" placeholder="Kullanıcı Adı">
+        </div>
+        <div class="input-group girisInput">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input id="sifre" type="password" class="form-control" name="sifre" placeholder="Şifre">
+        </div>
+        <div class="input-group girisBtn">
+          <input id="btnCheck" type="button" class="form-control" name="btnCheck" value="Giriş" onclick="kontrolEt()">
+        </div>
+    </form>>
+
+</body>
+
+<footer>
+  <p class="myFooter">Bütün haklar saklıdır. MEBA Corporation. </p>
+</footer>
+    
+</html>
